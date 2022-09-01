@@ -34,14 +34,15 @@ const handleSearch = async () => {
             Should Know!
 
         </Typography>
-        <Box position='relative' mb='72px'>
+        <Box position='relative' mb='72px' className='input-box'>
             <TextField sx={{ input: {
                 border: 'none', 
                 fontWeight: '700',
                 borderRadius: '4px'
              }, 
+             
              width: { lg: '1170px', xs: '350px'}}}
-              height= '76px'
+              height= '70px'
               value={search}
             onChange= {(e) => setSearch(e.target.value.toLowerCase())}
             placeholder='Search Exercises'

@@ -1,4 +1,4 @@
-ody {
+body {
   font-family: 'Josefin Sans';
   background-color: #FFFAFB;
 }
@@ -37,6 +37,7 @@ ody {
   right: 140px;
 }
 
+
 .right-arrow:hover,
 .left-arrow:hover {
   transform: scale(1.3, 1.3);
@@ -46,6 +47,8 @@ ody {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  overflow: auto;
+ 
 }
 
 .detail-image {
@@ -55,13 +58,17 @@ ody {
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
+  right: 0px;
   top: 0px;
-  width: 900px;
-  height: 900px;
+  width: 700px;
+  height: 700px;
   margin-top: -330px;
   z-index: -1;
 
+}
+.input-box input:focus{
+  outline: none;
+  color: red;
 }
 
 .exercise-card {
@@ -91,6 +98,10 @@ ody {
 .exercise-card:hover,
 .bodyPart-card:hover {
   transform: scale(1.1, 1.1);
+  
+}
+.exercise-card:hover{
+  border-top: 4px solid #FF2625;
 }
 
 .search-btn:hover {
